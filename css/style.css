@@ -47,7 +47,7 @@ a {
   z-index: -1;
 }
 .head {
-  width: 1200px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -83,7 +83,7 @@ a {
   font-weight: bold;
   font-family: open-sans-bold;
   text-align: center;
-  width: 689px;
+  max-width: 689px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -272,7 +272,7 @@ main {
 .main-content,
 .footer,
 .hand-mades {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -552,7 +552,8 @@ input:focus {
 }
 .hm-text {
   width: 350px;
-  height: 265px;
+  min-height: 265px;
+  max-height: 100%;
   border: 3px solid #d3c59d;
 }
 .hm-trend-caption {
@@ -660,7 +661,30 @@ input:focus {
   justify-content: center;
   align-items: start;
 }
+@media (max-width: 1200px) {
+  .menu-list {
+    visibility: hidden;
+  }
+  .bars {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bar {
+    width: 23px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+  }
 @media (min-width: 641px) and (max-width: 1200px) {
+    .intro {
+      text-align: center;
+      font-size: 26px;
+      line-height: 1.7;
+    }
   .header {
     background-image: url(../img/banner-bg-tablet.jpg);
   }
@@ -707,8 +731,31 @@ input:focus {
   }
 }
 @media (max-width: 640px) {
+  .trend {
+      width: 100%;
+      min-height: 230px;
+      margin-bottom: 2px;
+  }
   .header {
+    width: 100%;
     background-image: url(../img/banner-mobile.jpg);
+  }
+  .logo {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .bars {
+      right: 15px;
+      top: 30px;
+  }
+  .main-content {
+  display: block;
+  }
+  .posts, .mades-posts {
+  display: block;
+  }
+  .hand-made {
+  margin-bottom: 25px;
   }
   .made-first {
     background-image: url(../img/shop-item-mobile1.jpg);
