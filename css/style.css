@@ -200,7 +200,7 @@ a {
   display: flex;
 }
 main {
-  width: 778px;
+  max-width: 778px;
 }
 .articles-trend {
   min-height: 320px;
@@ -294,7 +294,7 @@ h4,
   margin-bottom: 0;
 }
 .posts img {
-  width: 380px;
+  max-width: 380px;
   background-color: #eff6f1;
   margin-right: 30px;
 }
@@ -353,7 +353,7 @@ h4,
   margin-left: 1px;
 }
 aside {
-  width: 270px;
+  max-width: 270px;
 }
 .new-posts {
   margin-bottom: 55px;
@@ -362,7 +362,7 @@ aside {
   margin-bottom: 20px;
 }
 .new-post img {
-  width: 70px;
+  max-width: 70px;
   background-color: #f4f7f6;
   margin-right: 16px;
   margin-left: 1px;
@@ -382,7 +382,7 @@ h3.new-caption {
 h3.new-caption::after {
   content: "";
   display: block;
-  width: 66px;
+  max-width: 66px;
   height: 3px;
   background-color: #b59f5b;
   margin-top: 14px;
@@ -660,6 +660,8 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: start;
+
+  padding-bottom: 37px;
 }
 @media (max-width: 1200px) {
   .menu-list {
@@ -682,11 +684,23 @@ input:focus {
 @media (min-width: 641px) and (max-width: 1200px) {
     .intro {
       text-align: center;
-      font-size: 26px;
+      font-size: 40px;
       line-height: 1.7;
     }
   .header {
     background-image: url(../img/banner-bg-tablet.jpg);
+  }
+  .trends {
+      margin-top: 50px;
+  }
+  h3.new-caption {
+      font-size: 18px;
+  }
+  h3.new-caption::after {
+      margin-bottom: 35px;
+  }
+  .trend-caption a {
+      font-size: 17px;
   }
   .trend {
     width: calc(50% - 3px);
@@ -736,13 +750,25 @@ input:focus {
       min-height: 230px;
       margin-bottom: 2px;
   }
+  .trends {
+      margin-top: 38px;
+  }
+  .trend-caption a {
+      font-size: 16px;
+  }
+  .head {
+  margin-bottom: 43px;
+  }
   .header {
     width: 100%;
     background-image: url(../img/banner-mobile.jpg);
   }
-  .logo {
-  margin-left: auto;
-  margin-right: auto;
+  .logo img {
+  width: 269px;
+  margin-top: 230px;
+  }
+  .intro {
+      font-size: 26px;
   }
   .bars {
       right: 15px;
