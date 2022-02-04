@@ -423,12 +423,11 @@ input:focus {
   border: none;
 }
 .input-search-text {
-  min-width: 243px;
+  width: 220px;
 }
 .input-search-text-2 {
-  min-width: 270px;
+  width: 270px;
 }
-
 .send {
   margin-bottom: 60px;
 }
@@ -459,7 +458,7 @@ input:focus {
   color: #ffffff;
   font-weight: 700;
   font-family: open-sans-bold;
-  max-width: 270px;
+  width: 270px;
   height: 48px;
   background-color: #b59f5b;
   border: none;
@@ -685,6 +684,14 @@ display:none;
     margin: 4px 0;
   }
   }
+  @media (min-width: 641px) and (max-width: 700px){
+  .input-search-text {
+      max-width: 160px;
+     }
+     .input-search-text-2, .button-subscribe {
+     max-width: 210px;
+   }
+ }
 @media (min-width: 641px) and (max-width: 1200px) {
     .intro {
       text-align: center;
@@ -729,16 +736,6 @@ display:none;
     max-width: 380px;
     background-color: #eff6f1;
     margin-right: 30px;
-  }
-  .input-search-text {
-    min-width: 130px;
-    max-width: 150px;
-   }
-   .input-search-text-2 {
-   min-width: 190px;
- }
- .button-subscribe {
-     min-width: 190px;
   }
   .hand-mades,
   .footer {
