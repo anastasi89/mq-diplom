@@ -423,11 +423,12 @@ input:focus {
   border: none;
 }
 .input-search-text {
-  width: 223px;
+  min-width: 243px;
 }
 .input-search-text-2 {
-  width: 270px;
+  min-width: 270px;
 }
+
 .send {
   margin-bottom: 60px;
 }
@@ -458,7 +459,7 @@ input:focus {
   color: #ffffff;
   font-weight: 700;
   font-family: open-sans-bold;
-  width: 270px;
+  max-width: 270px;
   height: 48px;
   background-color: #b59f5b;
   border: none;
@@ -668,7 +669,7 @@ display:none;
 }
 @media (max-width: 1200px) {
   .menu-list {
-    visibility: hidden;
+    display: none;
   }
   .bars {
     position: absolute;
@@ -728,6 +729,16 @@ display:none;
     max-width: 380px;
     background-color: #eff6f1;
     margin-right: 30px;
+  }
+  .input-search-text {
+    min-width: 130px;
+    max-width: 150px;
+   }
+   .input-search-text-2 {
+   min-width: 190px;
+ }
+ .button-subscribe {
+     min-width: 190px;
   }
   .hand-mades,
   .footer {
@@ -798,4 +809,10 @@ display:none;
   .made-third {
     background-image: url(../img/shop-item-mobile3.jpg);
   }
+}
+@media (max-width: 400px) {
+.posts img {
+width: 100%;
+padding: 0;
+}
 }
